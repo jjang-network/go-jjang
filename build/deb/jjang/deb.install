@@ -1,0 +1,5 @@
+build/bin/{{.BinaryName}} usr/bin
+{{- if eq .BinaryName "gjang" }}
+build/deb/jjang/completions/bash/gjang etc/bash_completion.d
+build/deb/jjang/completions/zsh/_gjang usr/share/zsh/vendor-completions
+{{end -}}
